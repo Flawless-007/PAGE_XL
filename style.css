@@ -19,9 +19,7 @@ body {
 
 
 
-/* .main {
-background-color: red;
-} */
+
 
 
 /* main nav */
@@ -269,7 +267,7 @@ nav a{
 .border-3 {
 
   border: 5px solid red;
-  background-color: #cab87d65;
+  background: linear-gradient(#EAE0C6 50%,#EEE5DA 50%);
   width: 95%;
   height: 70px;
   position: absolute;
@@ -299,12 +297,256 @@ nav a{
 
 }
 
-.border-4 {
 
-  border: 1px solid transparent;
-  background-color: #EEE5DA;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main1 {
+  background-color: red;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+
+
+.b1 {
+
+  border: 2px solid black;
+  width: 50%;
+  height: 200px;
+
+}
+
+.image-slider {
+  border: 8px solid black;
+  width: 50%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-slider figure {
   width: 100%;
-  height: 380px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fade 20s infinite;
+  opacity: 0;
+}
+
+/* Add your own image URLs here */
+.image-slider figure:nth-child(1) { 
+  background-image: url(IMG/img1.jpg);
+  animation-delay: 0s;
+}
+.image-slider figure:nth-child(2) { 
+  background-image: url(IMG/img2.jpg);
+  animation-delay: -4s;
+}
+.image-slider figure:nth-child(3) { 
+  background-image: url(IMG/img3.jpg);
+  animation-delay: -8s;
+}
+.image-slider figure:nth-child(4) { 
+  background-image: url(IMG/img4.jpg);
+  animation-delay: -12s;
+}
+.image-slider figure:nth-child(5) { 
+  background-image: url(IMG/img5.jpg);
+  animation-delay: -16s;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
+
+
+
+
+
+.border-7 {
+
+  border: 2px solid transparent;
+  background-color: #EEE5DA;
+  height: 200px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 30px;
+}
+
+
+.border-7 h1, p {
+  position: relative;
+}
+
+
+.border-7 p {
+
+  margin-top: 15px;
+  color: #2c363e;
+  font-weight: 600;
+
+
+}
+
+.border-7 h1 {
+
+  margin-top: 20px;
+  color: #536878;
+
+
+}
+
+
+.border-7 .img-1 {
+
+  width: 200px;
+  position:relative;
+  translate: 92% -52%;
+  transform: rotateZ(30deg);
+  opacity: 0.3;
+
+}
+
+.border-7 .img-2 {
+
+  width: 170px;
+  position:relative;
+  translate: -128% -90%;
+  transform: rotateY(180deg);
+  transform: scaleX(-1);
+  rotate: -20deg;
+  opacity: 0.3;
+
+}  */
+
+
+/* Property selection */
+
+ .property-grid {
+
+  border: 5px solid red;
+  background-color: #EEE5DA;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.property-card {
+
+  border: 2px solid black;
+  width: 170px;
+  height: 270px;
+  border-radius: 8px;
+  text-align: start;
+  transition: transform 0.2s;
+  
+}
+
+.property-card:hover {
+
+  transform: translateY(-5px);
+
+}
+
+.property-image {
+
+  border: 2px solid black;
+  width: 100%;
+  height: 150px;
+
+}
+
+.property-card .property-image-2-border {
+
+  border: 2px solid black;
+  height: 50px;
+  display: block;
+  margin-top: 4px;
+
+}
+
+.property-image2 {
+
+  border: 2px solid transparent;
+  width: 20px;
+  margin-left: 20px;
+
+}
+
+.property-card h4 {
+
+  position: relative;
+  font-size: 14px;
+  margin-left: 40px;
+  margin-top: -25px;
+
+}
+
+.property-card p {
+
+  margin-top: 5px;
+  /* margin: 5px 6px -10px; */
+  /* padding: .4rem;
+
+}
+
+
+/* .border-4 {
+
+  border: 9px solid transparent;
 
 }
 
@@ -432,8 +674,6 @@ nav a{
 
 .border-6-1 h1 {
 
-  /* position: relative;
-  translate: 60% -60%; */
   display: block;
   position: absolute;
   translate: 0 -85%;
@@ -443,15 +683,13 @@ nav a{
 
 .border-6-1 h3 {
 
-  /* position: relative;
-  translate: -60% 60% ; */
   font-size: 13px;
   margin-bottom: -20px;
 
-}
+} */
 
 /* Desktop Version */
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
 
   .border-1 span .t1 {
 
@@ -532,135 +770,6 @@ nav a{
 
 }
 
-.border-7 {
-
-  border: 2px solid transparent;
-  background-color: #EEE5DA;
-  height: 200px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  padding-top: 30px;
-}
-
-
-.border-7 h1, p {
-  position: relative;
-}
-
-
-.border-7 p {
-
-  margin-top: 15px;
-  color: #2c363e;
-  font-weight: 600;
-
-
-}
-
-.border-7 h1 {
-
-  margin-top: 20px;
-  color: #536878;
-
-
-}
-
-
-.border-7 .img-1 {
-
-  width: 200px;
-  position:relative;
-  translate: 92% -52%;
-  transform: rotateZ(30deg);
-  opacity: 0.3;
-
-}
-
-.border-7 .img-2 {
-
-  width: 170px;
-  position:relative;
-  translate: -128% -90%;
-  transform: rotateY(180deg);
-  transform: scaleX(-1);
-  rotate: -20deg;
-  opacity: 0.3;
-
-} 
-
-
-/* Property selection */
-
-.property-grid {
-
-  border: 5px solid red;
-  background-color: #EEE5DA;
-  height: 300px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-}
-
-.property-card {
-
-  border: 2px solid black;
-  width: 170px;
-  height: 270px;
-  border-radius: 8px;
-  text-align: start;
-  transition: transform 0.2s;
-  
-}
-
-.property-card:hover {
-
-  transform: translateY(-5px);
-
-}
-
-.property-image {
-
-  border: 2px solid black;
-  width: 100%;
-  height: 150px;
-
-}
-
-.property-card .property-image-2-border {
-
-  border: 2px solid black;
-  height: 50px;
-  display: block;
-  margin-top: 4px;
-
-}
-
-.property-image2 {
-
-  border: 2px solid transparent;
-  width: 20px;
-  margin-left: 20px;
-
-}
-
-.property-card h4 {
-
-  position: relative;
-  font-size: 14px;
-  margin-left: 40px;
-  margin-top: -25px;
-
-}
-
-.property-card p {
-
-  margin-top: 5px;
-  /* margin: 5px 6px -10px; */
-  padding: .4rem;
-
-}
 
 
 
@@ -670,13 +779,13 @@ nav a{
   text-align: center;
   color: #e5e5e5;
 
-}
+}  */
 
 
 /* F.A.Q */
 
 
-.container {
+/* .container {
 
   border: 2px solid red;
   width: 100%;
@@ -817,12 +926,12 @@ nav a{
   font-weight: 300;
   margin: 2em 0;
 
-}
+} */
 
 
 /* Footer */
 
-footer {
+/* footer {
 
   background-color: blueviolet;
   display: flex;
@@ -967,7 +1076,7 @@ footer {
 .icons .linkedin:hover .icon-up::before {
   background: #4267B2;
   color: #ffffff;
-}
+} */
 
 /* 
 
