@@ -451,7 +451,7 @@ nav a{
 }
 
 /* Desktop Version */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 576px) {
 
   .border-1 span .t1 {
 
