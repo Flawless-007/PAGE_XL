@@ -24,3 +24,4 @@ document.querySelectorAll('.image-wrapper').forEach(imageWrapper => {
     document.querySelector('.marquee').classList.remove('paused');
   });
 });
+
