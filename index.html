@@ -50,7 +50,10 @@
             </nav>
 
                 <div class="icon">
-                  <img src="IMG/home.png" alt="">
+
+                  <!-- <img src="IMG/home.png" alt=""> -->
+                   <img src="IMG/WhatsApp Image 2024-10-02 at 12.46.54_7a0601de.jpg" alt="">
+
                 </div>
 
         </div>
@@ -61,53 +64,530 @@
 
     <main>
     
-      <div class="border-2">
+        <div class="border-2">
   
-          <h1>FIND YOUR <br> DREAM HOME.</h1>
-          <p>Your Key to Infinite Luxury. <br> Where Every Home is a Masterpiece of Refined Living.</p>
-          <button class="button-1"><a href="">Sign-up</a></button>
+            <h1>FIND YOUR <br> DREAM HOME.</h1>
+            <p>Your Key to Infinite Luxury. <br> Where Every Home is a Masterpiece of Refined Living.</p>
+            <button class="button-1"><a href="">Sign-up</a></button>
       
-      </div>
+        </div>
 
-      <div class="border-3">
+        <div class="border-3">
 
+            <div class="border-container">
 
-          <div class="page0">
-              <div class="page0-link"><a href="location.html"><h5>Location</h5></a>
-                  <img src="IMG/home-icon-silhouette.png" alt="">
-              </div>
-          </div>
+            <button class="main-btn" onclick="toggleDropdown('buy')">Buy</button>
+            <button class="main-btn" onclick="toggleDropdown('rent')">Rent</button>
+            <button class="main-btn" onclick="toggleDropdown('shortlet')">Short Let</button>
+        
+            <!-- Buy Dropdown -->
+            <div class="dropdown-panel" id="buy-dropdown">
 
-          <div class="page1">
-              <div class="page1-link"><a href="type.html"><h5>Type</h5></a>
-                  <img src="IMG/home-icon-silhouette.png" alt="">
-              </div>
-          </div>
+                <div class="section-header" onclick="toggleSection(this)">
 
-          <div class="page2">
-              <div class="page2-link"><a href="price.html"><h5>Price Range</h5></a>
-                  <img src="IMG/home-icon-silhouette.png" alt="">
-              </div>
-          </div>
+                        <span>Location</span>
+                        <span class="arrow">▼</span>
 
-      </div>
+                </div>
+
+                <div class="section-content">
+
+                    <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                        <div class="checkbox"></div>
+                        Lagos Mainland
+
+                    </div>
+
+                    <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                        <div class="checkbox"></div>
+                        Victoria Island
+
+                    </div>
+
+                </div>
+        
+                <div class="price-row">
+
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Type</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                Apartments
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                Houses
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Bedrooms</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+                            
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+                                <div class="checkbox"></div>
+                                2 Bedrooms
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                3 Bedrooms
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        
+                <div class="price-row">
+
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Min Price</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦5,000,000
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦10,000,000
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Max Price</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+                                <div class="checkbox"></div>
+                                ₦20,000,000
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦50,000,000
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦500,000,000
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        
+                <div class="action-btns">
+
+                    <button class="action-btn" onclick="closeAll()">Cancel</button>
+                    <button class="action-btn" style="background: #4CAF50; color: white;">Search Properties</button>
+
+                </div>
+
+            </div>
+        
+            <!-- Rent Dropdown -->
+            <div class="dropdown-panel" id="rent-dropdown">
+
+                <div class="section-header" onclick="toggleSection(this)">
+
+                    <span>Location</span>
+                    <span class="arrow">▼</span>
+
+                </div>
+
+                <div class="section-content">
+
+                    <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                        <div class="checkbox"></div>
+                        Ikeja
+
+                    </div>
+
+                    <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                        <div class="checkbox"></div>
+                        Lekki
+
+                    </div>
+
+                </div>
+        
+                <div class="price-row">
+
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Type</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                Studio
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                Condo
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Bedrooms</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                1 Bedroom
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                2 Bedrooms
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        
+                <div class="price-row">
+
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Min Price</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦500,000/yr
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦1,000,000/yr
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Max Price</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+                            
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦5,000,000/yr
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦10,000,000/yr
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        
+                <div class="action-btns">
+
+                    <button class="action-btn" onclick="closeAll()">Cancel</button>
+                    <button class="action-btn" style="background: #4CAF50; color: white;">Search Rentals</button>
+
+                </div>
+
+            </div>
+        
+            <!-- Short Let Dropdown -->
+            <div class="dropdown-panel" id="shortlet-dropdown">
+
+                <div class="section-header" onclick="toggleSection(this)">
+
+                    <span>Location</span>
+                    <span class="arrow">▼</span>
+
+                </div>
+
+                <div class="section-content">
+
+                    <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                        <div class="checkbox"></div>
+                        Victoria Island
+
+                    </div>
+
+                    <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                        <div class="checkbox"></div>
+                        Banana Island
+
+                    </div>
+
+                </div>
+        
+                <div class="price-row">
+
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Type</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                Vacation Home
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                Serviced Apartment
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Bedrooms</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                1 Bedroom
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                2 Bedrooms
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        
+                <div class="price-row">
+
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Min Price/Night</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦50,000
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦100,000
+
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="price-section">
+
+                        <div class="section-header" onclick="toggleSection(this)">
+
+                            <span>Max Price/Night</span>
+                            <span class="arrow">▼</span>
+
+                        </div>
+
+                        <div class="section-content">
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦500,000
+
+                            </div>
+
+                            <div class="checkbox-item" onclick="toggleCheck(this)">
+
+                                <div class="checkbox"></div>
+                                ₦1,000,000
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        
+                <div class="action-btns">
+
+                    <button class="action-btn" onclick="closeAll()">Cancel</button>
+                    <button class="action-btn" style="background: #4CAF50; color: white;">Find Shortlets</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
 
         <div class="image-slider-border">
 
             <div class="text-2">
             
-            <h4>Unlimited Realtor <span id="name">RUTH.</span></h4>
-            <p>is here to help you find your <br>dream home, from cozy cottages <br>to luxurious properties, guding <br>you every step of the way.</p>
+                <h4>Unlimited Realtor <span id="name">RUTH.</span></h4>
+                <p>is here to help you find your <br>dream home, from cozy cottages <br>to luxurious properties, guding <br>you every step of the way.</p>
             
             </div>
             
             <div class="image-slider">
             
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
             
             </div>
         
@@ -117,44 +597,34 @@
 
           <h3><strong>CALL⁚</strong>&nbsp;<span class="b6-text">*07035705169*</span>&nbsp;NOW!</h3>
           
-          </div>
+        </div>
 
-          <!-- <div class="border-7">
-
-            <h2>Why choose us?</h2>
-            <p>Elevate your home buying experience with <br> expertise, integrity, and unmatched <br> personalized experience.</p>
-            <img class="img-1" src="IMG/question.png" alt="">
-            <img class="img-2" src="IMG/question (1).png" alt="">
-          
-          </div> -->
-
-          <div class="property-grid">
+        <div class="property-grid">
 
             <div class="carousel-container">
             
-              <div class="marquee">
+                <div class="marquee">
+                                        <!-- Duplicate images to create infinite loop -->
             
-                <!-- Duplicate images to create infinite loop -->
-            
-                <div class="image-wrapper"><img src="aks.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="asd.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="kdf.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="sold.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="eoe.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-            
-                <div class="image-wrapper"><img src="aks.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="asd.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="kdf.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="sold.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="eoe.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/aks.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/asd.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/kdf.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/sold.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/eoe.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                
+                    <div class="image-wrapper"><img src="IMG/aks.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/asd.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/kdf.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/sold.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/eoe.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
 
-                <div class="image-wrapper"><img src="aks.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="asd.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="kdf.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="sold.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
-                <div class="image-wrapper"><img src="eoe.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/aks.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/asd.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/kdf.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/sold.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
+                    <div class="image-wrapper"><img src="IMG/eoe.jpg" alt=""><span><a href="about.html">See More Detials</a></span></div>
             
-              </div>
+                </div>
             
             </div>
             
@@ -164,8 +634,8 @@
 
           <h2>Have Any Questions?</h2> <br>
           <h3>Have a look at our F.A.Q</h3>
-          <img class="img-1" src="ask.png" alt="">
-          <img class="img-2" src="ask (1).png" alt="">
+          <img class="img-1" src="IMG/ask.png" alt="">
+          <img class="img-2" src="IMG/ask (1).png" alt="">
         
         </div>
 
@@ -173,16 +643,16 @@
 
           <h2>Frequently Asked Questions</h2>
       
-          <div class="accordion">
+            <div class="accordion">
       
-            <div class="accordion-item">
-      
-              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
-              <div class="accordion-content">
-      
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
-      
-              </div>
+                <div class="accordion-item">
+        
+                <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                <div class="accordion-content">
+        
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+        
+                </div>
       
             </div>
       
@@ -228,71 +698,96 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
       
               </div>
+
             </div>
-          </div>
+
+        </div>
 
 
       
     </main>
 
-
+    <!-- Footer -->
     <footer>
+
       <div class="footer-content">
-          <div class="footer-logo">
-              <h1>
-                  <span id="gold" >UNLIMITED</span>
-                  <span id="brown" >LIFESTYLE REALTORS</span>
-              </h1>
-          </div>
-          <h4>Socials</h4>
-          <ul class="icons">
+
+            <div class="footer-logo">
+
+                <h1>
+                    <span id="gold" >UNLIMITED</span>
+                    <span id="brown" >LIFESTYLE REALTORS</span>
+                </h1>
+
+            </div>
+
+            <h4>Socials</h4>
+            <ul class="icons">
       
-              <li class="icon tiktok">
+                <li class="icon tiktok">
+                
+                    <span class="icon-up">TikTok</span>
+                    <img src="IMG/tik-tok.png" alt="">
+                
+                </li> 
+                
+                <li class="icon instagram">
+                
+                    <span class="icon-up">Instagram</span>
+                    <img src="IMG/instagram.png" alt="">
+                
+                </li>
               
-                <span class="icon-up">TikTok</span>
-                <img src="IMG/tik-tok.png" alt="">
+                <li class="icon youtube">
+                
+                    <span class="icon-up">Youtube</span>
+                    <img src="IMG/youtube.png" alt="">
+                
+                </li>
               
-              </li> 
+                <li class="icon facebook">
+                
+                    <span class="icon-up">Facebook</span>
+                    <img src="IMG/facebook.png" alt="">
+                
+                </li> 
               
-              <li class="icon instagram">
-              
-                <span class="icon-up">Instagram</span>
-                <img src="IMG/instagram.png" alt="">
-              
-              </li>
-              
-              <li class="icon youtube">
-              
-                <span class="icon-up">Youtube</span>
-                <img src="IMG/youtube.png" alt="">
-              
-              </li>
-              
-              <li class="icon facebook">
-              
-                <span class="icon-up">Facebook</span>
-                <img src="IMG/facebook.png" alt="">
-              
-              </li> 
-              
-          </ul>
+            </ul>
           
-          <div class="footer-links">
-              <button><a href="contact.html">CONTACT</a></button>
-              <button><a href="about.html">ABOUT</a></button>
-              <button><a href="index.html">HOME</a></button>
-          </div>
+            <div class="footer-links">
+
+                <button><a href="contact.html">CONTACT</a></button>
+                <button><a href="about.html">ABOUT</a></button>
+                <button><a href="index.html">HOME</a></button>
+              
+            </div>
           
-          <div class="footer-links">
-              <button><a href="">Terms & Conditions</a></button>
-              <button><a href="">Privacy Policy</a></button>
-          </div>
+            <div class="footer-links">
+
+                <button><a href="">Terms & Conditions</a></button>
+                <button><a href="">Privacy Policy</a></button>
+
+            </div>
           
-          <div class="copyright">
-              © 2025 UNLIMITED LIFESTYLE REALTORS. All rights reserved.
-          </div>
+            <div class="copyright">
+
+                © 2025 UNLIMITED LIFESTYLE REALTORS.
+
+            </div>
       </div>
+
     </footer>
+
+    <button id="backToTop" title="Go to top">
+
+        <svg viewBox="0 0 24 24">
+
+            <path d="M12 6.5l-5.5 5.5 1.41 1.41L12 9.33l4.09 4.08L17.5 12 12 6.5z"/>
+            
+        </svg>
+
+    </button>
+
 
     <script src="index.js"></script>
     <script src="login.js"></script>
