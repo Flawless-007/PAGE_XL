@@ -1,4 +1,6 @@
-  const items = document.querySelectorAll(".accordion button");
+//  F.A.Q
+ 
+ const items = document.querySelectorAll(".accordion button");
   
   function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
@@ -25,15 +27,7 @@ document.querySelectorAll('.image-wrapper').forEach(imageWrapper => {
   });
 });
 
-// let btn= document.querySelector('.btn');
-// btn.addEventListener('click',function(){
-
-//     window.scrollTo({
-//         top: 0,
-//         left: 0,
-//         behavior: "smooth"
-//     })
-// })
+// BACK TO TOP
 
 const backToTopButton = document.getElementById("backToTop");
 
@@ -54,6 +48,8 @@ backToTopButton.onclick = function() {
         behavior: "smooth"
     });
 };
+
+// DROPDOWN
 
 function toggleDropdown(type) {
   const panels = document.querySelectorAll('.dropdown-panel');
@@ -85,3 +81,4 @@ document.addEventListener('click', (event) => {
       closeAll();
   }
 });
+

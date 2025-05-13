@@ -5,6 +5,24 @@
   box-sizing: border-box;
 
 }
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.partners,.partners-images {
+
+  display: none;
+
+}
+
+
 /* BACK TO TOP */
 #backToTop {
 
@@ -707,7 +725,7 @@ nav svg{
 
 @keyframes scroll {
   from { transform: translateX(0); }
-  to { transform: translateX(-330%); }
+  to { transform: translateX(-50%); }
 }
 
 /* INTERMISSION */
@@ -923,19 +941,16 @@ footer {
   right: 0;
   background: #1d2b29;
   padding: 20px 30px;
-  text-align: left;
+  text-align: center;
   min-height: 300px;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  bottom: 0%;
-  left: 0%;
   border-radius: 0%;
   z-index: 1; 
 }
 
 .footer-content {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -948,12 +963,11 @@ footer {
   text-align: center;
   width: 170px;
   margin-bottom: 20px;
+  margin-left: -40px;
   border: 2px solid transparent;
-  margin-left: -30px;
   letter-spacing: 1px;
 
 }
-
 
 .footer-logo #gold {
 
@@ -973,7 +987,8 @@ h4 {
 
   display: block;
   color: #E1F22C;
-  font-size: 20px;
+  font-size: 24px;
+  letter-spacing: 2px;
 
 }
 
@@ -1236,14 +1251,57 @@ h4 {
     width: 55px;
     height: 55px;
     border-radius: 10px;
-    background-color: #ccd65e;
 
+  }
+
+  .partners {
+
+    border: 5px solid transparent;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    place-content: center;
+    margin-top: 90px;
+  
+  }
+
+  .partners-images {
+  
+    display: flex;
+    animation: scroll 30s linear infinite;
+  
+  }
+
+  .marquee1::before {
+
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #788242);
+
+  }
+  
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #788242);
+    position: re;
+  }
+  
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #1a2d29);
+  }
+  
+  .logos-slide {
+    height: 20px;
+    margin: 0 50px;
+    overflow: hidden;
   }
 
   .border-2 {
 
     padding: 3rem;
     margin-bottom: 60px;
+    margin-top: -110px;
 
   }
 
@@ -1272,7 +1330,7 @@ h4 {
   .image-slider {
 
     margin-left: 50px;
-    height:50px;
+    height:250px;
 
   }
 
